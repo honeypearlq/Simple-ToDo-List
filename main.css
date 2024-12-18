@@ -1,0 +1,147 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F2F9FF; /* Pastel blue */
+    color: #333;
+  }
+  
+  /* Header Styles */
+  #header {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #title {
+    font-size: 2.5rem;
+    color: #E195AB; /* Pastel pink */
+    margin-bottom: 10px;
+  }
+  
+  #datetime {
+    font-size: 1.2rem;
+    color: #FFCCE1; /* Light pink */
+  }
+  
+  /* Form Section */
+  form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #FFCCE1;
+    border-radius: 25px 0 0 25px;
+    width: 300px;
+    outline: none;
+  }
+  
+  form input::placeholder {
+    color: #E195AB;
+  }
+  
+  form button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    background-color: #E195AB;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #FFCCE1;
+  }
+  
+  /* ToDo List */
+  .todo-list {
+    list-style: none;
+    width: 80%;
+    max-width: 500px;
+    margin-top: 20px;
+  }
+  
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF5D7; /* Light yellow */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  .todo-item {
+    flex: 1;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .check-btn, .delete-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .check-btn {
+    color: #E195AB;
+  }
+  
+  .delete-btn {
+    color: #FFCCE1;
+  }
+  
+  /* Theme Selector */
+  .flexrow-container {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .theme-selector {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid #FFF5D7;
+  }
+  
+  .pink-theme {
+    background-color: #E195AB;
+  }
+  
+  .yellow-theme {
+    background-color: #FFF5D7;
+  }
+  
+  .pastel-blue-theme {
+    background-color: #F2F9FF;
+  }
+  
+  .theme-selector:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
